@@ -24,6 +24,7 @@ echo "$DEST" > "$CONFIG"
 echo "Pasta dos projetos: $DEST"
 
 # Botão na Mesa
+mkdir -p "$HOME/Desktop"
 BTN="$HOME/Desktop/↻ Atualizar 3D.command"
 cat > "$BTN" <<CMD
 #!/bin/bash
