@@ -13,5 +13,5 @@ Uma vez só, depois de clonar:
 
     bash ~/print3d/tools/instalar-atalho.sh
 
-Cria a pasta **Impressão 3D** na Mesa com todos os `.3mf` prontos (e as prévias `.png`).
-Para receber peças novas: duplo clique em **↻ Atualizar** dentro dela.
+Copia os `.3mf` prontos (e as prévias `.png`) para **iCloud Drive › Documentos › 3D**, uma subpasta por projeto, e põe o botão **↻ Atualizar 3D** na Mesa para baixar peças novas.
+

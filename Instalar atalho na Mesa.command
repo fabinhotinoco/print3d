@@ -1,4 +1,4 @@
 #!/bin/bash
-# Duplo clique neste arquivo (no Finder) para criar a pasta "Impressão 3D" na Mesa.
+# Duplo clique (no Finder): configura a pasta iCloud Drive › Documentos › 3D e o botão na Mesa.
 cd "$(dirname "$0")" && bash tools/instalar-atalho.sh
 echo; echo "Pronto! Pode fechar esta janela."
