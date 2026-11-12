@@ -1,0 +1,12 @@
+# Valores de projeto (não de fatiador). Ajustar após o teste 000-teste-folgas.
+PLA_BAMBU_BASIC:
+  density_g_cm3: 1.24
+  clearance:            # folga radial por lado, mm
+    press_fit: 0.10
+    snug_fit: 0.15
+    slip_fit: 0.25      # encaixe deslizante / tampa
+    free_fit: 0.40      # peça que gira solta / articulação
+  hole_comp_mm: 0.15    # furos verticais saem menores: somar ao diâmetro
+  min_wall_mm: 1.2      # 3 perímetros de 0.42
+  max_bridge_mm: 30
+  max_overhang_deg: 50

@@ -1,0 +1,9 @@
+# Volumes úteis em mm (X × Y × Z). Fonte: páginas de produto/revendas; conferir no wiki da Bambu.
+A1:
+  build_volume: [256, 256, 256]
+  nozzle: 0.4
+  bed_max_c: 100
+A2L:
+  build_volume: [330, 320, 325]
+  nozzle: 0.4          # aceita 0.2 / 0.4 / 0.6 / 0.8
+  bed_max_c: 80
