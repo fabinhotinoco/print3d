@@ -1,7 +1,7 @@
 # Valores de projeto (não de fatiador). Calibrados pelo teste 000-teste-folgas (2026-11-12).
 PLA_BAMBU_BASIC:
   density_g_cm3: 1.24
-  clearance:            # folga radial por lado, mm — MEDIDO (pino 8 mm vertical em furo vertical)
+  clearance:            # folga radial por lado, mm — MEDIDO NA A1 (pino 8 mm vertical); A2L pendente
     press_fit: 0.05     # permanente, entra com muita pressão (medido)
     snug_fit: 0.10      # pressão, removível (medido)
     slip_fit: 0.15      # entra folgado / desliza (medido)
