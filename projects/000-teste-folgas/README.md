@@ -9,5 +9,5 @@ radial de .00 a .40 mm gravada ao lado) e um pino solto.
 
 | Impressora | Entra com pressão (press_fit) | Gira livre sem jogo (slip_fit) |
 |---|---|---|
-| A1  |  |  |
+| 1ª impressão (impressora a confirmar) | .05 muita pressão · .10 pressão | .15 folgado |
 | A2L |  |  |
