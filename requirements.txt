@@ -3,3 +3,5 @@ trimesh
 matplotlib
 numpy
 pyyaml
+networkx
+lxml
