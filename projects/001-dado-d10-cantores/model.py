@@ -12,10 +12,11 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 from build123d import *
 from lib.export import build, mesh_of
+from lib.multicolor import Part, write_3mf
 
 # ───── Parâmetros ─────────────────────────────────────────────────────────────
-NAMES_TOP = ["Oruam", "50cents", "Repetir\nBaseado", "Pausa p/\nbaseado", "Another\nJoint"]
-NAMES_BOTTOM = ["TZ", "BTT", "L7", "JUNin", "GELLATO"]
+NAMES_TOP = ["Oruam", "50 Cent", "Repetir\nBaseado", "Pausa p/\nbaseado", "Another\nJoint"]
+NAMES_BOTTOM = ["TZ", "BTT", "LT", "MCJunin", "GELLATO"]
 RADIUS = 21.0            # raio do anel (mm) → dado ~42 mm de largura
 ZIGZAG = 2.2             # meia-altura do zigue-zague (mm)
 ENGRAVE = 0.8            # profundidade do texto (mm)
@@ -137,5 +138,11 @@ def lay_on_face(shapes, index: int):
 if __name__ == "__main__":
     die, text = lay_on_face(make_die(), BED_FACE)
     here = Path(__file__).parent
-    build(die, here, "dado-d10-cantores")
-    mesh_of(text, here / "out" / "texto.stl")
+    build(die, here, "dado-d10-cantores")                    # 1 cor (texto em baixo-relevo)
+    out = here / "out"
+    die_mesh = mesh_of(die, out / "dado-d10-cantores.stl")
+    text_mesh = mesh_of(text, out / "texto.stl")
+    write_3mf(out / "dado-d10-cantores-2cores.3mf", "dado-d10-cantores", [
+        Part("dado", die_mesh, filament=1),                   # slot 1 do AMS: cor do dado
+        Part("nomes", text_mesh, filament=2),                 # slot 2 do AMS: cor dos nomes
+    ])
